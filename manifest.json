@@ -1,0 +1,16 @@
+{
+	"name": "MathML for Chrome",
+	"version": "1.0",
+	"description": "Render MathML via MathJax",
+	"content_scripts": [
+		{
+			"matches": [
+				"http://*/*",
+				"https://*/*",
+				"file://*/*"
+			],
+			"js": ["loader.js"],
+			"run_at": "document_end"
+		}
+	]
+}
